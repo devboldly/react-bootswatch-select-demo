@@ -22,7 +22,7 @@ Read the **[official documentation](https://devboldly.github.io/react-bootswatch
 
 <a href="https://devboldly.github.io/react-bootswatch-select-demo/" target="_blank" rel="noopener noreferrer"><img src="./src/__docz__/images/demo.gif" /></a>
 
-👁️ **[Live Demo](https://devboldly.github.io/react-bootswatch-select/ExampleComponent#example)**
+👁️ **[Live Demo](https://devboldly.github.io/react-bootswatch-select-demo/)**
 
 ## Overview
 
@@ -42,6 +42,8 @@ By default, all CSS is loaded from [bootstrapcdn.com](https://www.bootstrapcdn.c
   - Want to quickly skin your Bootstrap site? Drop this component in and try out Bootswatch with one line!
 - **🌠 Build beautiful prototypes quickly**
   - Quickly swatch out your next big project so you can focus on the stuff that matters.
+- **🎛️ Visible, hidden, and display-only modes**
+  - Several modes for the level of integration that suits you.
 - **🎁 Quickly drop in [Bootstrap](https://devboldly.github.io/react-bootswatch-select/Bootstrap) and [Font Awesome](https://devboldly.github.io/react-bootswatch-select/FontAwesome)**
   - For convenience, Bootstrap and Font Awesome CDN components are included to get you up and running fast.
 
