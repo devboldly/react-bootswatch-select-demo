@@ -1,7 +1,5 @@
 import React from 'react';
-import { Bootstrap } from '../components/Bootstrap';
-import { BootswatchSelect } from '../components/BootswatchSelect';
-import { FontAwesome } from '../components/FontAwesome';
+import { Bootstrap, BootswatchSelect, FontAwesome } from 'react-bootswatch-select';
 
 // A Storybook is a collection of stories. Each story represents a single visual state of a component.
 // Technically, a story is a function that returns something that can be rendered to screen.

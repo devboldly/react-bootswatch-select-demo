@@ -1,42 +1,30 @@
 {
-  "name": "react-bootswatch-select",
+  "name": "react-bootswatch-select-demo",
   "version": "1.0.9",
   "author": "Justin Mahar <contact@justinmahar.com>",
-  "description": "Bootswatch theme selector component for React. Try Bootswatch themes on your Bootstrap site with one line!",
-  "homepage": "https://justinmahar.github.io/react-bootswatch-select/",
+  "description": "Storybook demo for Bootswatch theme selector component.",
+  "homepage": "https://justinmahar.github.io/react-bootswatch-select-demo/",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
-    "watch": "tsc --watch",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "build": "npm run build-storybook",
+    "test": "npm run lint",
     "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "predeploy": "npm run docz:build",
-    "deploy": "gh-pages -d .docz/dist",
-    "preship": "npm run build && git add dist && git diff-index --quiet HEAD || git commit -m \"Build, version, and publish.\" && npm version patch -m \"Build, version, and publish.\"",
-    "ship": "npm publish --access public",
-    "postship": "git push",
-    "docz": "npm run docz:clean && npm run docz:dev",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve",
-    "docz:clean": "rm -rf .docz/.cache"
+    "build-storybook": "build-storybook"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justinmahar/react-bootswatch-select.git"
+    "url": "git+https://github.com/justinmahar/react-bootswatch-select-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/justinmahar/react-bootswatch-select/issues"
+    "url": "https://github.com/justinmahar/react-bootswatch-select-demo/issues"
   },
   "keywords": [],
   "dependencies": {
-    "react-helmet": "^6.0.0"
+    "react-bootswatch-select": "^1.0.10"
   },
   "peerDependencies": {
     "react": "^16.13.0",
@@ -47,12 +35,6 @@
     "@storybook/addons": "^5.3.17",
     "@storybook/preset-typescript": "^2.1.0",
     "@storybook/react": "^5.3.17",
-    "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/react-hooks": "^3.2.1",
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.0",
-    "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
     "@types/react-helmet": "^5.0.15",
     "@types/webpack": "^4.41.12",
@@ -65,14 +47,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^2.2.0",
-    "jest": "^25.1.0",
     "prettier": "^2.2.1",
-    "react-ga": "^2.7.0",
-    "react-test-renderer": "^16.13.0",
-    "react-use-window-scroll": "^1.0.10",
-    "styled-components": "^5.2.1",
-    "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3"
   }
